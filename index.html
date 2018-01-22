@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Torres de Hanoi</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="lib/jquery.js"></script>
+    <script src="lib/jquery-ui.min.js"></script>
+</head>
+<body>
+	<section class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1>Torres de Hanoi</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+                <h4>origen</h4>
+                <div id="torre1" class="list-group torre">
+                </div>
+			</div>
+			<div class="col-sm-4">
+                <h4>auxiliar</h4>
+                <div id="torre2" class="list-group torre">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h4>destino</h4>
+                <div id="torre3" class="list-group torre"></div>
+			</div>
+        </div>
+        <div class="row">
+			<div class="col-sm-12">
+                <div class="info">
+                    <h2>Movimientos: <span>0</span></h2>
+                    <h4>(mínimo posible <span></span> movimientos)</h4>
+                    <h4><a>reiniciar</a></h4>
+                </div>
+                <div class="congratulations">
+                    <h2>Enhorabuena!</h2>
+                    <h4><a>otra ronda!</a></h4>
+                </div>
+			</div>
+        </div>
+	</section>
+    <script src="js/model/CustomError.js"></script>
+    <script src="js/model/StackDataStructure.js"></script>
+    <script src="js/HanoiGame.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
