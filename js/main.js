@@ -4,6 +4,7 @@ $(document).ready(function() {
     drawLevel(game);
     
     $('.list-group-item').draggable({
+        cursor: "move",
         cancel: ".list-group-item:not(:first-child)",
         revert: function(target){
             if(!target){
@@ -13,6 +14,9 @@ $(document).ready(function() {
     });
 
     $(".torre").droppable({
+        classes: {
+            "ui-droppable-active": "ui-state-default"
+        },
         accept: function(dragElement){
             return $(dragElement).parent() !== $(this) && ($(this).children().length === 0 || $(dragElement).attr("name") < $(this).children(":first-child").attr("name"));
         },

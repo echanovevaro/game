@@ -42,7 +42,7 @@ HanoiGame.prototype.upLevel = function(){
 }
 
 HanoiGame.prototype.isLevelFinished = function(){
-    return !this.torre3Data.canPush();
+    return !this.torre3.canPush();
 }
 
 HanoiGame.prototype.isGameFinished = function(){
