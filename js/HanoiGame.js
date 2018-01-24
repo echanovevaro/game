@@ -7,7 +7,7 @@ function HanoiGame(){
     this.blue = 102;
     this.maxAlpha = 1;
     this.alphaGap = 0.2;
-    this.level = 1;
+    this.level = 3;
     this.maxLevel = 3;
     this.createLevel();
 }
