@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -9,36 +9,59 @@
     <script src="lib/jquery.js"></script>
 </head>
 <body>
-    <div id="landing-container">
-        <div id="center">
-            <form id="start" action="game.html" method="GET">
-                <div class="modal-body">
-                    <h1>Torres de Hanoi</h1>
-                    <div class="form-group">
-                        <label for="jugadores">Jugadores:</label>
-                        <select class="form-control" name="jugadores" id="jugadores">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-default">Empezar</button>
-                </div>
-            </form>
-            <div id="game-over">
-                <div class="modal-body">
-                    <h1></h1>
-                    <div class="player-list"></div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default">Otra ronda!</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="js/landing.js"></script>
+	<div id="top">
+		<div class="top-inner">
+			<img src="images/bg.jpg">
+			<div class="title-wrap">
+				<div class="container">
+					<h1>Torres de Hanoi</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="fwidgets">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h2>Empezar</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<form id="start" action="game.html" method="GET">
+						<h2>Selecciona los jugadores!</h2>
+						<div class="form-group">
+							<label for="jugadores">Jugadores:</label>
+							<select class="form-control" name="jugadores" id="jugadores">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							</select>
+						</div>
+						<div class="button-footer">
+							<button type="submit" class="btn btn-default">Empezar</button>
+						</div>
+					</form>
+					<div id="game-over">
+						<div>
+							<h1></h1>
+							<div class="player-list separator-bottom"></div>
+							<div class="button-footer separator-top">
+								<button type="button" class="btn btn-default">Otra ronda!</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="bottom">
+	</div>
+	<script src="js/landing.js"></script>
 </body>
 </html>
