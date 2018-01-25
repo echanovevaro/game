@@ -1,3 +1,24 @@
+body, html{
+    height: 100%;
+}
+
+#landing-container{
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../images/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#center{
+    background-color: #fff;
+    border-radius: 5px;
+}
+
 .list-group-item{
     height: 30px;
     border-radius: 4px;
@@ -37,4 +58,8 @@ a:hover{
 
 .info{
     float: left;
+}
+
+.row:first-of-type h3 {
+	color: rgba(224, 102, 102, 1);
 }
