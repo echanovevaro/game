@@ -1,5 +1,3 @@
-![Ironhack Logo](https://i.imgur.com/1QgrNNw.png)
-
 # JS   Bootstrap Flexbox   Jquery   Jquery-ui   | Torres de Hanoi
 
 ## Introducción
