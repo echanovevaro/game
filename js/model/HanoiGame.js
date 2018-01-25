@@ -1,10 +1,10 @@
 function HanoiGame() {
 	this.minPieces = 3;
-	this.minWidth = 50;
+	this.minWidth = 70;
 	this.widthGap = 20;
-	this.red = 224;
-	this.green = 102;
-	this.blue = 102;
+	this.red = 237;
+	this.green = 86;
+	this.blue = 75;
 	this.maxAlpha = 1;
 	this.alphaGap = 0.2;
 	this.level = 1;

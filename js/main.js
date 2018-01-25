@@ -13,16 +13,16 @@ $(document).ready(function () {
 
 function drawLevel(game) {
 	$(".info span").text(0);
-	$(".info span").css("color", "rgb(51, 51, 51)");
+	$(".info span").css("color", "#fff");
 	$("#torre1").empty();
 	$("#torre2").empty();
 	$("#torre3").empty();
 	insertPieces(game.actualPlayer.game.torre1.stackControl);
-	$(".row:first-child h3 span.level").empty();
-	$(".row:first-child h3 span.level").text(game.actualPlayer.game.level);
+	$(".row:first-child span.level").empty();
+	$(".row:first-child span.level").text(game.actualPlayer.game.level);
 	if (game.players.length > 1) {
-		$(".row:first-child h3 span.player").empty();
-		$(".row:first-child h3 span.player").text(" - " + game.actualPlayer.name);
+		$(".row:first-child span.player").empty();
+		$(".row:first-child span.player").text(game.actualPlayer.name.split(" ")[1]);
 	}
 	$(".info h4 span").text(game.actualPlayer.game.getMaxMovements());
 	$(".congratulations").hide();

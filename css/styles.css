@@ -1,5 +1,31 @@
-body, html{
-    height: 100%;
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1170px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.container {
+		max-width: 940px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.container {
+		max-width: 728px;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 708px;
+	}
+}
+
+html, body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 #landing-container{
@@ -19,47 +45,53 @@ div#center{
     border-radius: 5px;
 }
 
-.list-group-item{
-    height: 30px;
-    border-radius: 4px;
-    align-self: center;
-    z-index: 1000;
+#fwidgets {
+	background: #ed564b;
+	border-top: 5px solid #f96b61;
+	border-bottom: 5px solid #f96b61;
+	color: #fff;
 }
 
-.list-group{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+#content .container {
+	margin: 4rem auto;
 }
 
-.torre{
-    height: 160px;
-    border-bottom: 2px solid gray;
+#content {
+	background-color: #fff;
 }
 
-.row{
-    margin-bottom: 20px;
+#bottom {
+	padding: 20px 0px 40px 0px;
+	background: #3b3b3b;
+	border-top: 5px solid #ed564b;
+	color: #fff;
+	flex-grow:1;
 }
 
-.congratulations{
-    float: right;
-    text-align: right;
-    color: rgba(224, 102, 102, 1);
+.list-group-item {
+	height: 30px;
+	border-radius: 4px;
+	align-self: center;
+	z-index: 1000;
 }
 
-a{
-    color: rgba(224, 102, 102, 1);
-    cursor: pointer;
+.list-group {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 
-a:hover{
-    color: rgba(224, 102, 102, 1);
+.torre {
+	height: 250px;
+	border-bottom: 2px solid rgba(0,0,0,.6);
 }
 
-.info{
-    float: left;
+.congratulations {
+	float: right;
+	text-align: right;
+	color: #ed564b;
 }
 
-.row:first-of-type h3 {
-	color: rgba(224, 102, 102, 1);
+.info {
+	float: left;
 }
